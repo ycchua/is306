@@ -1,6 +1,16 @@
 <body id="containerspace">
 <link type="text/css" rel="stylesheet" href="../css/main.css"/>
 <link rel="stylesheet" href="../css/jquery-ui-1.9.2.custom.css">
+<script src='https://cdn.firebase.com/v0/firebase.js'></script>
+
+<script>
+	var projects = new Firebase('https://ycchuahelper.firebaseio.com/');
+	projects.on('value', function(snapshot) {
+	var firstName = snapshot.val()
+	function displayChatMessage(firstName, firstName)
+    });
+</script>
+
 
 <div id="content" style="display:table-row">
 	<div id="sidebar" style="display:table-cell">
@@ -14,21 +24,20 @@
 			<input type="text" class="searchbox" style="display:table-cell" id="search" /> <div id="searchbtn" class="green-btn" style="display:table-cell" onclick="search()">Search</div>
 		</div>
 		<br/>
-		<label><h1>Projects</h1></label>
+		
+		<label><h1>Projects </h1></label>
 		<div id="accordion">
-			<h3>Project 1</h3>
+			<h3>Current Projects</h3>
 			<div>
-				<p>This is project 1.</p>
+				<p><script>
+				document.write(firstName)
+				</script></p>
 			</div>
-			<h3>Project 2</h3>
-			<div>
-				<p>This is project 2. </p>
-			</div>
-			<h3>Project 3</h3>
+			<h3>History Projects</h3>
 			<div>
 				<p>This is project 3. </p>
 			</div>
-			<h3>Project 4</h3>
+			<h3>Projects I applied for</h3>
 			<div>
 				<p>This is project 4. </p>
 			</div>
