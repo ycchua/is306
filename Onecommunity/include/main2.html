@@ -1,0 +1,69 @@
+<body id="containerspace">
+<link type="text/css" rel="stylesheet" href="../css/main.css"/>
+<link rel="stylesheet" href="../css/jquery-ui-1.9.2.custom.css">
+
+<div id="content" style="display:table-row">
+	<div id="sidebar" style="display:table-cell">
+		<div id="arrow" class="arrow">Calendar</div>
+		<iframe frameborder="0" id="sidebar-content" src="sidebar1.html" allowtransparency="true">
+			Browser does not support iframe!
+		</iframe>
+	</div>
+	<div id="sub-content" style="display:table-cell">
+		<div style="display:table-row">
+			<input type="text" class="searchbox" style="display:table-cell" id="search" /> <div id="searchbtn" class="green-btn" style="display:table-cell" onclick="search()">Search</div>
+		</div>
+		<br/>
+		<label><h1>Projects</h1></label>
+		<div id="accordion">
+			<h3>Project 1</h3>
+			<div>
+				<p>This is project 1.</p>
+			</div>
+			<h3>Project 2</h3>
+			<div>
+				<p>This is project 2. </p>
+			</div>
+			<h3>Project 3</h3>
+			<div>
+				<p>This is project 3. </p>
+			</div>
+			<h3>Project 4</h3>
+			<div>
+				<p>This is project 4. </p>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<script src="../js/jquery-1.9.1.js"></script>
+<script src="../js/jquery.ui.core.js"></script>
+<script src="../js/jquery.ui.widget.js"></script>
+<script src="../js/jquery.ui.accordion.js"></script>
+
+<script>
+	$(function() {
+		$( "#accordion" ).accordion({
+			collapsible: true
+		});
+		
+		$("#arrow").click(function() {
+			var src = $('#sidebar-content').attr('src');
+			
+			
+			if (src == "sidebar1.html") {
+				$("#sidebar-content").attr('src', 'sidebar2.html');
+				$("#arrow").removeClass("arrow");
+				$("#arrow").addClass("arrow2");
+				$("#arrow").html("Profile");
+			} else if (src == "sidebar2.html") {
+				$("#sidebar-content").attr('src', 'sidebar1.html');
+				$("#arrow").removeClass("arrow2");
+				$("#arrow").addClass("arrow");
+				$("#arrow").html("Calendar");
+			}
+		});
+  	});
+	</script>
+</body>

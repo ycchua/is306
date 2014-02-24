@@ -1,0 +1,106 @@
+body {
+	background: url("../image/background.jpg");
+	background-size: cover;
+}
+
+/****************************************** Dialog Box *************************************************/
+#dialog label, #dialog input { display:block; }
+#dialog label { margin-top: 0.5em; }
+#dialog input, #dialog textarea { width: 95%; }
+#tabs { margin-top: 1em;}
+#tabs li .ui-icon-close { float: left; margin: 0.4em 0.2em 0 0; cursor: pointer; }
+#add_tab { cursor: pointer;}
+
+/****************************************** Container *************************************************/
+#containerspace {
+	background: transparent;
+	font-size: 11px;
+	width: 1080px;
+	padding: 20px 0 0 120px;
+}
+
+#logo { 
+	background: url("../image/logo.png");
+	width: 250;
+	height: 120;
+	margin: 0.2em 0 0 8em;
+}
+
+#container { width: 100%; }
+.header-left {  float: left; }
+.header-right{ float: right; }
+
+#logout-btn { text-align: center; line-height: 40px; margin: 6em 8em 0 0}
+#logout-btn:hover {opacity: 0.5;}
+#login-btn { text-align: center; line-height: 40px; margin: 6em 1em 0 0;}
+#login-btn:hover {opacity: 0.5;}
+#register-btn { text-align: center; line-height: 40px; margin: 6em 8em 0 0;}
+#register-btn:hover { opacity: 0.5;}
+#searchbtn { text-align: center; margin: 0 0 0 0; font-size: 15px; }
+#searchbtn:hover { opacity: 0.5; }
+.submit {float:right; margin: 15px 80px 0 0;}
+
+/****************************************** Body *************************************************/
+#content-frame { margin-top: 20px; width: 100%; height: 100%; }
+#content { margin-left: 10px; width: 100%; height: 100%; }
+#sidebar-content { height:140%; width: 120%; overflow:hidden; text-align:center;}
+#sub-content { height:100%; vertical-align: top; padding: 10px 0 0 90px;}
+
+.searchbox { margin-right: 20px; position:relative; width: 400px; }
+
+/*********************************** Side Bar ********************************************************/
+#containersidebar { height: 90%; background: transparent; }
+#siderbarcontent { padding: 20px;}
+.text_position { margin: 25px 0 0 70px; }
+
+.profilepic { 
+	background: url("../image/profile.png"); 
+	width:150px; 
+	height:150px;
+	margin: 0px 0 0 70px;
+}
+
+.arrow {
+	background: url("../image/arrow.png") no-repeat;
+	width: 50px;
+	height: 30px;
+	
+	text-indent: 4px;
+	line-height: 33px;
+	
+	position: absolute;
+	left: 30em;
+	top: 2em;
+}
+
+.arrow2 {
+	background: url("../image/arrow.png") no-repeat;
+	width: 50px;
+	height: 30px;
+	
+	text-indent: 4px;
+	line-height: 33px;
+	
+	position: absolute;
+	left: 36em;
+	top: 0em;
+}
+
+.arrow:hover {
+	opacity: 0.8;
+}
+/****************************************** Button *************************************************/
+.grey-btn { 
+	background: url("../image/buttons.png") no-repeat -152px -12px transparent;
+	color: white;
+	width: 135px;
+	height: 38px;
+}
+
+.green-btn { 
+	background: url("../image/buttons.png") no-repeat -152px -168 transparent;
+	color: black;
+	width: 140px;
+	height: 15px;
+}
+

@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>Yi Chong Corpporation</title>
+		
+		<link type="text/css" rel="stylesheet" href="css/main.css"/>
+	</head>
+	<body>
+		<div id="container" class="clearfix">
+			<div class="header-left" id="logo"></div>
+			<div class="header-right">
+				<div id="logout-btn" style="display:none" class="grey-btn">Logout</div>
+			</div>
+			<div class="header-right">
+				<div id="register-btn" class="grey-btn">Register</div>
+			</div>
+			<div class="header-right">
+				<div id="login-btn" class="grey-btn">Login</div>
+			</div>
+		</div>
+		<iframe frameborder="0" id="content-frame" src="include/main.html" allowtransparency="true">
+			Browser does not support iframe!
+		</iframe>
+	</body>
+	
+	<script src="js/jquery-1.9.1.js"></script>
+	<script>
+		$("#login-btn").click(function() {
+			$("#content-frame").attr("src", "include/main2.html");
+			$("#logout-btn").show();
+			$("#register-btn").hide();
+			$("#login-btn").hide();
+		});
+		
+		$("#register-btn").click(function() {
+			$("#content-frame").attr("src", "include/register.html");
+			$("#logout-btn").hide();
+			$("#register-btn").hide();
+			$("#login-btn").hide();
+		});
+		
+		$("#logout-btn").click(function() {
+			$("#content-frame").attr("src", "include/main2.html");
+			$("#logout-btn").hide();
+			$("#register-btn").show();
+			$("#login-btn").show();
+		});
+	</script>
+</html>
